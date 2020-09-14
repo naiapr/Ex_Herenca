@@ -20,9 +20,9 @@ namespace Ex_Heranca.Entities
             Price = price;
         }
 
-        public virtual string PriceTag(string name, double price)
+        public virtual string PriceTag()
         {
-            return name + "$" + price;
+            return Name + "$" + Price;
         }
     }
 }

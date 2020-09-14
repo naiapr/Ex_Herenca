@@ -17,13 +17,13 @@ namespace Ex_Heranca.Entities
         {
             CustomsFree = customsFree;
         }
-        public double TotalPrice(double price, double customsFree)
+        public double TotalPrice()
         {
-            return price + customsFree;
+            return Price + CustomsFree;
         }
-        public override string PriceTag(string name, double price)
+        public override string PriceTag()
         {
-            return "Customs Free :" + CustomsFree;
+            return Name + " $ " + TotalPrice() + "(Customs Free : $" + CustomsFree + ")";
         }
 
         

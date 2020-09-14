@@ -18,9 +18,9 @@ namespace Ex_Heranca.Entities
             ManufactureDate = manufactureDate;
         }
 
-        public override string PriceTag(string name, double price)
+        public override string PriceTag()
         {
-            return "Manufacture date:" + ManufactureDate;
+            return Name + "$" + Price + " Manufacture date:" + ManufactureDate;//.ToString("dd/MM/yyyy")
         }
     }
 }
