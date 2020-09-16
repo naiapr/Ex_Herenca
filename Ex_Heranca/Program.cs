@@ -54,7 +54,7 @@ namespace Ex_Heranca
             Console.WriteLine("PRICE TAGS:");
             foreach(Product obj in list)
             {
-                Console.WriteLine(obj.Name + "$" + obj.Price);
+                Console.WriteLine(obj.PriceTag());
             }
         }
     }
